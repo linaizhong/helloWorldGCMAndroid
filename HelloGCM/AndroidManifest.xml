@@ -6,13 +6,37 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="18" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- App Permissions GCM -->
+    <permission
+        android:name="br.example.hellogcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="br.example.hellogcm.permission.C2D_MESSAGE" />
+    <!-- End App Permissions GCM -->
+    <!-- End Permissions -->
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <!-- Metadata -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- End Metadata -->
+
+
+        <!-- Activities -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -22,6 +46,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- End Activities -->
+
+
+        <!-- Receivers -->
+        <receiver
+            android:name="br.example.hellogcm.ReceiverData"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="br.example.gcmplay" />
+            </intent-filter>
+        </receiver>
+        <!-- End Receivers -->
+
+
+        <!-- Services -->
+        <service android:name="br.example.hellogcm.ServiceData" >
+
+            <!-- empty -->
+        </service>
+        <!-- End Services -->
     </application>
 
 </manifest>
