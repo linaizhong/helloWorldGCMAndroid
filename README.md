@@ -19,9 +19,9 @@ Please, see with attention the manifestp.xml file, it's very important.
 Notes
 ------
 
-If you run the php server, it'll send messages for all mobile that have registers in API_ACCESS_KEY.
+* If you run the php server, it'll send messages for all mobile that have registers in API_ACCESS_KEY.
 
-References: Google Cloud Messaging, Stack Overflow (:P) and Android Cookbook.
+* References: Google Cloud Messaging, Stack Overflow (:P) and Android Cookbook.
 
 
 
