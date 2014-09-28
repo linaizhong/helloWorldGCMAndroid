@@ -16,6 +16,11 @@ Third: you need get API_ACCESS_KEY from user mobile and register in [MOCK SERVER
 Please, see with attention the manifestp.xml file, it's very important.
 
 
+Notes
+------
+
+References: Google Cloud Messaging, Stack Overflow (:P) and Android Cookbook.
+
 
 
 
