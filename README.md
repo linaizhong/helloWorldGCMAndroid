@@ -1,1 +1,4 @@
-For this demo, you need to register your app in Google API and to change the value of API_ACCESS_KEY 
+Hello World Using GCM in Android
+==================================
+This is a simple tutorial created for help during implementation of Push notifications in Android Development.
+
