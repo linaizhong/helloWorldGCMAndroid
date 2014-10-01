@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
 			gcm = GoogleCloudMessaging.getInstance(MainActivity.this);
 			// id is empty???
 			if (registerID.trim().length() == 0) {
-				// Busca o ID em background
+				//Search ID in background
 				Log.v(DEBUG_TAG, "Getting registration_id in background");
 				sendRegistrationInBackground();
 			} else {
