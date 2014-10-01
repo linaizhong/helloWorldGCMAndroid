@@ -6,7 +6,7 @@ Requirements
 -------------
 
 First, you need register your account in Google API, and get:
-* Project Number (put it in MainActivity (SERVER_SENDER));
+* Project Number (put it in [MainActivity](https://github.com/brunogabriel/helloWorldGCMAndroid/blob/master/HelloGCM/src/br/example/hellogcm/MainActivity.java) (SERVER_SENDER));
 * API KEY.
 
 Second, put the API KEY in php mock server [MOCK SERVER](https://github.com/brunogabriel/helloWorldGCMAndroid/blob/master/mock_server.php) in API_ACCESS_KEY.
