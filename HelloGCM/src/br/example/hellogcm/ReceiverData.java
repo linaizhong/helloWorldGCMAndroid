@@ -8,9 +8,6 @@ import android.support.v4.content.WakefulBroadcastReceiver;
 
 public class ReceiverData extends WakefulBroadcastReceiver {
 
-	/**
-	 * Called when a message is received from GCM for the user
-	 */
 	@Override
 	public void onReceive(Context context, Intent intent) {
 
