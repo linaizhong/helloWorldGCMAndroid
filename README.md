@@ -13,7 +13,7 @@ Second, put the API KEY in php mock server [MOCK SERVER](https://github.com/brun
 
 Third: you need get API_ACCESS_KEY from user mobile and register in [MOCK SERVER](https://github.com/brunogabriel/helloWorldGCMAndroid/blob/master/mock_server.php). You can get in Android resource, because during the execution of app, use LOG_TAG in console.
 
-Please, see with attention the manifestp.xml file, it's very important.
+Please, see with attention the manifest.xml file, it's very important.
 
 
 Notes
